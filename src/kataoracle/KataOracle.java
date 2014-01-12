@@ -23,6 +23,7 @@ public class KataOracle {
         ResultSet set = statement.executeQuery("select * from CAMBIO_EUR_A");
         
         while(set.next()) {
+            System.out.println("Printing query \"select * from CAMBIO_EUR_A\"\n");
             printRegister(set);
         }
     }
